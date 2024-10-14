@@ -19,7 +19,7 @@ public:
     }
     void printNumber()
     {
-        cout << "Your complex number is " << a << "+" << b << "i" << endl;
+        cout << "Your complex number is " << a << " + " << b << "i;" << endl;
     }
 };
 
@@ -34,6 +34,6 @@ int main()
 
     c3.setDataBySum(c1, c2);
     c3.printNumber();
-    
+
     return 0;
 }
