@@ -10,11 +10,12 @@ using namespace std;
 
 class Binary
 {
+private:
     string s;
+    void chk_bin(void);
 
 public:
     void read(void);
-    void chk_bin(void);
     void ones(void);
     void display(void);
 };
@@ -39,6 +40,8 @@ void Binary ::chk_bin(void)
 
 void Binary ::ones()
 {
+    // Nested method call
+    chk_bin();
     for (int i = 0; i < s.length(); i++)
     {
         if (s.at(i) == '0')
@@ -77,7 +80,7 @@ int main()
     // Nesting of Member functions
     Binary b;
     b.read();
-    b.chk_bin();
+    // b.chk_bin();
     b.display();
     b.ones();
     b.display();
