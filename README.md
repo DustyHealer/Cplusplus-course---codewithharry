@@ -43,3 +43,18 @@ Benefits of OOPS:
 Struct vs Class
 1. Struct does not have data hiding.
 2. Can not add functions inside a struct.
+
+## Tutorial 36
+1. DRY - Do not Repeat Yourself
+If we keep repeating the code, if we have to make a change we will have to make it in multiple places.
+
+Types of Inheritance:
+1. Single Inheritance: A ---> B (One base class and one derived class)
+2. Multiple Inheritance: A,B --> C (Derived class with more than one base class)
+3. Hierarchical Inheritance: C --> A,B (Several derived classes from a single base class)
+4. Multilevel Inheritance: A --> B --> C (Deriving a class from already derived class)
+e.g Animal --> Mammal --> Cow
+    Mammal = Animal + More
+    Cow = Mammal + More
+5. Hybrid Inheritance: A --> B,C --> D
+It is a combination of multiple inheritance and multilevel inheritance
